@@ -1,0 +1,49 @@
+.cabecalho {
+    font-family: 'Bebas Neue', sans-serif;
+    height: 1vh;
+    background: rgba(255, 255, 255, 0.3) ;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 2.5vh;
+}
+
+.cabecalho img {
+    padding: 5vh 0 0 0;
+    height: 10vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.barraHome {
+    height: .4vh;
+    width: 75%;
+    background-color: #F89844;
+}
+
+.cabecalho ul {
+    padding: 5vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecalho li a {
+    padding: 1.6vh;
+    text-decoration: none;
+    color: #ffff;
+    transition: background-color 0.2s;
+    font-size: vh;
+    font-weight: bold;
+}
+
+.cabecalho li a:hover {
+    background-color: rgba(227, 23, 10, 0.85);
+    color: #ffff;
+    border-radius: .5vh; 
+}
