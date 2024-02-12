@@ -8,21 +8,17 @@
     padding: 2.5vh;
 }
 
-.cabecalho img {
+.imgLogo {
     padding: 5vh 0 0 0;
-    height: 10vh;
+    /* height: 10vh; */
+    max-width: 12%;
+    height: auto;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.barraHome {
-    height: .4vh;
-    width: 75%;
-    background-color: #F89844;
+.imgLogin {
+    padding: 0 0 0 5vh;
+    max-width: 100%;
+    height: auto;
 }
 
 .cabecalho ul {
@@ -33,17 +29,33 @@
     align-items: center;
 }
 
-.cabecalho li a {
-    padding: 1.6vh;
+.cabecalho a {
+    padding: 0 1.6vh;
     text-decoration: none;
     color: #ffff;
     transition: background-color 0.2s;
-    font-size: vh;
+    font-size: 1.5vh;
     font-weight: bold;
 }
 
 .cabecalho li a:hover {
     background-color: rgba(227, 23, 10, 0.85);
     color: #ffff;
-    border-radius: .5vh; 
+    border-radius: 0.5vh; 
+}
+
+.divLogin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.cabecalho .active {
+    border-bottom: .4vh solid #F89844; 
+    border-bottom-left-radius: 8vh 8vh;
+}
+
+@media screen and (max-width: 1300x) {
+    
 }

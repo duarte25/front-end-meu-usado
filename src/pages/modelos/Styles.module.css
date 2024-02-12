@@ -1,0 +1,9 @@
+.fundo {
+    background-image: url("Bmw.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #ffff;
+}
