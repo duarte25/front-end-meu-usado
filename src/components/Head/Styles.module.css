@@ -56,6 +56,33 @@
     border-bottom-left-radius: 8vh 8vh;
 }
 
-@media screen and (max-width: 1300x) {
-    
+/* Adicione as regras CSS para o menu de hambúrguer */
+.hamburguerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguerMenu .linha {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .hamburguerMenu {
+        display: flex; /* Exibe o ícone do menu de hambúrguer */
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px; /* Ajusta a altura do ícone de hambúrguer */
+    }
+
+    .hamburguerMenu .linha {
+        width: 25px;
+    }
+
+    .cabecalho {
+        justify-content: space-between; /* Ajusta a posição dos elementos */
+    }
 }
