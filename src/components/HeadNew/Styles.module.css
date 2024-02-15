@@ -6,6 +6,9 @@
   align-items: center;
   flex-direction: row;
   padding: 2.5vh;
+  color: var(--cor-baby-powder);
+  font-size: 1.7vh;
+  font-weight: bold;
 }
 
 .links {
@@ -13,15 +16,20 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0 5vh;
 }
 
 .linksLogo {
-  margin-right: 2rem;
+  padding: 6vh 0 0 0;
+  height: auto;
 }
 
-.linksLogo img {
-  width: 100px;
-  height: 40px;
+.divLogin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5vh;
+  gap: 1vh;
 }
 
 .linksWrapper {
@@ -30,41 +38,27 @@
   margin: auto 0;
 }
 
-.navButton {
+.linksWrapper ul {
+  list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
 }
 
-.linksWrapper p a,
-.navButton p,
-.navMenuWrapper p a {
-  color: #ffff;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: capitalize;
-  margin: 0 1rem;
-  cursor: pointer;
-  text-decoration: none;
+.linksWrapper a {
+  padding: 0 2vh;
+  margin: 1vh;
 }
 
-.navMenuWrapper p a {
-  color: #fff;
+/*Cria esse efeito quando passa encima do destino (Menu)*/
+.linksWrapper li a:hover {
+  color: rgba(248, 175, 41, 0.9);
+  border-radius: 0.5vh;
 }
 
-.navButton button,
-.navMenuWrapper button {
-  padding: 0.5rem 2rem;
-  color: #fff;
-  background-color: #3aafa9;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.linksWrapper .active {
+  border-bottom: .4vh solid var(--cor-sandy-brown); 
+  border-bottom-left-radius: 8vh 8vh;
 }
 
 .navMenu {
@@ -73,33 +67,39 @@
   position: relative;
 }
 
+/*MENU BURGUER*/
 .navMenuWrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  text-align: end;
   background: #17252a;
-  padding: 2rem;
+  padding: 3vh;
   position: absolute;
-  top: 40px;
-  right: 0;
-  margin-top: 1rem;
-  min-width: 210px;
-  border-radius: 5px;
+  right: 0vh;
+  margin-top: 4vh;
+  min-width: 20vh;
+  border-radius: 1vh;
   box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
-.navMenuWrapper p a {
-  margin: 1rem 0;
-  text-decoration: none;
+.navMenuWrapper ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5vh;
 }
 
-.navMenuWrapperButton {
-  display: none;
+.imgLogin {
+  padding: 0 0 0 5vh;
+  max-width: 100%;
+  height: auto;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
+  .linksWrapper{
+    padding-left: 3vh;
+  }
+}
+
+@media screen and (max-width: 1250px) {
   .linksWrapper {
     display: none;
   }
@@ -107,6 +107,11 @@
   .navMenu {
     display: flex;
   }
+
+  .divLogin {
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 700px) {
@@ -120,7 +125,7 @@
     padding: 2rem 4rem;
   }
 
-  .navButton {
+  .divLogins {
     display: none;
   }
 
@@ -131,4 +136,5 @@
   .navMenuWrapperButton {
     display: block;
   }
+  
 }
