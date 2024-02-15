@@ -7,7 +7,7 @@
   flex-direction: row;
   padding: 2.5vh;
   color: var(--cor-baby-powder);
-  font-size: 1.7vh;
+  font-size: 1.3vh;
   font-weight: bold;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .linksWrapper a {
-  padding: 0 2vh;
+  padding: 0 1vh;
   margin: 1vh;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .linksWrapper .active {
-  border-bottom: .4vh solid var(--cor-sandy-brown); 
+  border-bottom: .4vh solid var(--cor-sandy-brown);
   border-bottom-left-radius: 8vh 8vh;
 }
 
@@ -72,9 +72,10 @@
   background: #17252a;
   padding: 3vh;
   position: absolute;
-  right: 0vh;
-  margin-top: 4vh;
-  min-width: 20vh;
+  right: -2.5vh;
+  margin-top: 3.5vh;
+  height: 50vh;
+  width: 50vw;
   border-radius: 1vh;
   box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
 }
@@ -94,7 +95,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .linksWrapper{
+  .linksWrapper {
     padding-left: 3vh;
   }
 }
@@ -111,7 +112,7 @@
   .divLogin {
     display: none;
   }
-  
+
 }
 
 @media screen and (max-width: 700px) {
@@ -136,5 +137,5 @@
   .navMenuWrapperButton {
     display: block;
   }
-  
+
 }

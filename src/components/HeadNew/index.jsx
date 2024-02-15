@@ -62,15 +62,13 @@ export default function Cabecalho() {
                 )}
                 {toggleMenu && (
                     <div className={Styles.navMenuWrapper}>
-                        <div className={Styles.navMenuWrapperLinks}>
-                            <Menu />
-                            <div lassName={Styles.navMenuWrapperButton}>
-                                <FiLogOut
-                                    style={{ color: 'var(--cor-sandy-brown)', fontSize: '3vh' }}
-                                />
-                                <a href="/login">ENTRAR</a>
-                            </div>
-                        </div>
+                        <Menu />
+                        {/* <div lassName={Styles.navMenuWrapperButton}>
+                            <FiLogOut
+                                style={{ color: 'var(--cor-sandy-brown)', fontSize: '3vh' }}
+                            />
+                            <a href="/login">ENTRAR</a>
+                        </div> */}
                     </div>
                 )}
             </div>
